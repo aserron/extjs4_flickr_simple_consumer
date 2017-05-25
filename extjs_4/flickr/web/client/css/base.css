@@ -1,0 +1,304 @@
+@charset "utf-8";
+/* CSS Document */
+body,h1,h2,h3,p,span {
+    font-family: Verdana;
+}
+
+
+#loading-mask{
+	background-color:white;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	z-index:20000;
+}
+#loading{
+	height:auto;
+	position:absolute;
+	left:45%;
+	top:40%;
+	padding:2px;
+	z-index:20001;
+}
+#loading a {
+	color:#225588;
+}
+#loading .loading-indicator{
+	background:white;
+	color:#444;
+	font:bold 13px Helvetica, Arial, sans-serif;
+	height:auto;
+	margin:0;
+	padding:10px;
+}
+#loading-msg {
+	font-size: 12px;
+	font-weight: normal;
+	padding: 10px 0px;
+	clear: both;
+	text-align: center;
+	float: left;
+}
+
+
+.flickrlist {
+    font-family : Verdana;
+    min-width   : 938px
+}
+.flickrlist .dataview-list {
+    width:100%;
+    height: 100%;
+}
+
+
+.flickrlist .items {
+    font-family: fantasy;
+}
+
+.flickrlist .items h1,h2,h3{
+    clear: both;
+    font-size: 0.6em;
+}
+
+.flickrlist .items .item {
+    margin      : 20px 32px;
+    float       : left;
+    clear       : none;
+    background-image: url('../images/list/image_bkg.gif');
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+}
+
+
+.flickrlist .items .x-view-over {
+    background: url("../images/list/image_over_bkg.gif") no-repeat;
+}
+
+.flickrlist .items .item .thumb-wrap {
+    float:  left;
+    clear:  both;
+    width: 228px;
+    height: 146px;
+    padding:8px;
+
+    
+}
+
+
+
+.flickrlist .item-over {
+    display         : none;
+    position        : absolute;
+    left            :-100px;
+    top             :-100px;
+    float           : left;
+    background-image: url('../images/list/icon_detail.png');
+
+    width   : 50px;
+    height  : 50px;
+
+    z-index: 30000;
+}
+
+.app-list .x-grid3 {
+    background-color: black;
+    color:grey;
+}
+
+.app-list .x-grid3 .x-grid3-row {
+    border: 0px none;
+    cursor: pointer;
+}
+
+.app-list .x-grid3 .x-grid3-header {
+    display: none;
+}
+
+.app-list .x-grid3 .x-grid3-row-over {
+    border              : 0px;
+    background-color	: #8c8c8c !important;
+    background-image	: url('../images/list/list_over_bkg.png');
+    background-position	: left;
+    background-repeat	: no-repeat;
+    color           	: black;
+}
+
+.app-list .x-grid3 .x-grid3-body .x-grid3-row-nostyle {
+    background-image: none !important;
+    background-color: white !important;
+}
+
+.x-grid3-row-body .x-grid3-row-nostyle {
+    background-image: none !important;
+    background-color: white !important;
+}
+
+.app-list .x-grid3 .x-grid3-col-list-title {
+    font-size       : 16px;
+    line-height     : 30px;
+    padding-left    : 30px;
+}
+
+/* row first, cell first*/
+.app-list  .x-grid3-row-first {
+    background-color    : white !important;
+    background          : none !important;
+}
+.app-list  .x-grid3-row-first .x-grid3-cell-first  {
+    color               : #ffa340;
+    font-weight         : bold;
+    background-color    : black !important;
+    border-radius       : 10px 10px 0px 0px;
+    -moz-border-radius	: 10px 10px 0px 0px;
+
+}
+.x-grid3-row-first .x-grid3-cell-first div {
+    border-bottom       : solid 1px #ffa340;
+    padding: 0px !important;
+    margin              : 5px 30px 5px 30px;
+}
+
+/* row sel, cell*/
+.app-list .x-grid3 .x-grid3-row-selected {
+    border              :0px;
+    background-color    : black !important;
+    background-image    : url('../images/list/list_sel_bkg.png');
+    background-position : left;
+    background-repeat   :   no-repeat;
+
+    color           :black;
+}
+
+.app-list  .x-grid3-row-selected .x-grid3-cell-first{
+    
+    background-color    : white !important;
+    background-image    : url('../images/list/list_sel_bkg.png');
+    background-position : left;
+    background-repeat   :   no-repeat;
+    color               :black;
+
+    border-color        : red;
+    border-radius       : 10px 0px 0px 0px;
+    -moz-border-radius	: 10px 0px 0px 0px;
+}
+
+.app-topbar {
+    background-color: black;
+    
+}
+.app-topbar .x-panel-body {
+    min-width: 1054 px;
+    overflow: hidden;
+}
+
+.menu-button {
+    width: 50px;
+    height: 50px;
+    display: block;
+    float: left;
+}
+
+
+
+
+
+
+
+/** Custom btn*/
+.main-nav-button{
+    background:#ffffff;
+    /* margin  : 10px 0;*/
+    width   :   46px !important;
+    height  :   46px    !important;
+    border  :   1px solid rgba(0, 0, 0, 0.2);
+    -moz-border-radius      : 5px;
+    -webkit-border-radius   : 5px;
+    -moz-box-shadow         : 0px 0px 5px rgba(255, 255, 255, 0.25);
+    
+    
+}
+
+.main-nav-button button{
+    position	:absolute;
+    top         :0;
+    left	:0;
+    width	:100%;
+    height	:100%;
+    border	:none;
+    opacity	:0;
+    cursor	:pointer;
+}
+
+
+
+.main-nav-button .main-nav-icon{
+    width	:36px;
+    height	:36px;
+    top         :5px;
+    left	:5px;
+    position	:relative;
+    zoom	:100%;
+    opacity	:0.8
+}
+
+.main-nav-button .main-nav-button-overlay{
+    background	: -moz-linear-gradient(top, rgba(0,0,0,0) 20%, rgba(0,0,0,0.1));
+    position	:absolute;
+    top         :0;
+    left	:0;
+    width	:100%;
+    height	:100%;
+    -moz-border-radius	:3px 3px 3px 3px;
+}
+
+.x-btn-over .main-nav-button-overlay{
+    background: -moz-linear-gradient(top, rgba(0,0,0,0) 20%, rgba(0,0,0,0));
+}
+
+.x-btn-click .main-nav-button-overlay, .x-btn-menu-active .main-nav-button-overlay{
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.1) 80%, rgba(0,0,0,0));
+}
+
+.x-btn-menu-active.main-nav-button, .x-btn-menu-click.main-nav-button{
+    -moz-box-shadow:inset 0px 0px 5px rgba(0, 0, 0, 0.25);
+}
+
+.main-nav-button .contacts_large {
+    background: url('../images/list/icon_detail_36.png') no-repeat left center;
+
+}
+
+
+
+/* search */
+.app-topbar {
+    font-size   : 24px !important;
+}
+input.app-searchfield {
+    color       : #8c8c8c;
+    font-size   : 20px !important;
+    line-height : 30px;
+    height      : 44px !important;
+    
+}
+
+.app-topbar .app-topbar-searchlabel {
+    line-height : 30px;
+}
+
+
+
+
+/* footer */
+.app-footer {
+    background-color: black;
+    color           : #E5872C;
+    overflow: hidden;
+}
+
+.app-footer .footer {
+    padding : 20px 40px 20px 40px;
+    overflow: hidden;
+}

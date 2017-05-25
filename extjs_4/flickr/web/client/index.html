@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Globant|Autodesk: Demo</title>
+    <link href="css/app.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="js/ext/resources/css/ext-all.css" />   
+    
+    <!--    
+    <script type="text/javascript" src="./js/ext/adapter/ext/ext-base-debug.js"></script>
+    <script type="text/javascript" src="./js/ext/ext-all-debug.js"></script>
+
+    !-->
+    <script type="text/javascript">
+        as = {
+            util : {
+                Loader : {
+                    files      : [
+                            './js/as/base/data/BaseJsonReader.js',
+                            './js/as/base/data/BaseJsonStore.js',
+
+                            './js/as/base/flickr/FlickrProxy.js',
+                            './js/as/base/flickr/FlickrPhotoReader.js',
+                            './js/as/base/flickr/FlickrWindow.js',
+
+                            './js/as/base/list/BaseListItemTpl.js',
+                            './js/as/base/list/BaseListView.js',
+
+
+                            './js/as/base/data/BaseJsonStore.js',
+                            './js/as/base/Controller.js',
+
+                            './js/as/base/IconButton.js',
+
+
+                            './js/as/app/controller/FrontController.js',
+                            './js/as/app/controller/AppController.js',
+                            './js/as/app/model/AppModel.js',
+
+                            './js/as/app/view/AppView.js',
+                            './js/as/app/view/AppCardPanel.js',
+                            './js/as/app/view/AppList.js'
+                            // ,'./js/as/app/view/AppLogPanel.js'
+                            ,'./js/as/app/view/AppFooterView.js'
+                            
+                            ,'./js/as/app/view/flickr/FlickrDataView.js'
+
+                            ,'./js/as/app/model/FlickrModel.js'
+                            ,'./js/as/app/view/flickr/FlickrPanel.js'
+                            ,'./js/as/app/view/flickr/FlickrDataViewTpl.js'
+
+                            ,'./js/as/app/view/topbar/AppTopbarView.js'
+                        ],
+                    count      : 0,
+                    onExtReady : function(){
+                        // console.warn("%s.go",this,arguments,Ext);
+                        var files, base;
+
+                        base = "./js/";
+
+                        files = this.files;
+                        Ext.Loader.load(files,this.onLoadComplete,this,true);
+
+                    },
+                    onLoadComplete : function(){
+                        // console.info("%s.onLoadComplete",window,arguments);
+                        this.count++;
+                        // if(this.files.length==this.count){
+                            window.App = new as.app.controller.FrontController();
+                            window.App.initialize();
+                        //}
+                        
+                    }
+                }
+            }
+        }
+
+    </script>
+    <script type="text/javascript" src="./js/build/ext.js"></script>
+    
+    <link href="css/base.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="loading">
+            <div class="loading-indicator">
+                <img src="images/widgets/loader_main.gif" alt="loader" width="124" height="124" />
+                <br /><span id="loading-msg">Loading Ext JS Framework...</span></div>
+        </div>
+    </body>
+</html>
